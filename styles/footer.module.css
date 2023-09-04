@@ -1,0 +1,40 @@
+.footer {
+    background-image: linear-gradient(to right, var(--lightblue), var(--blue));
+    padding: 5rem;
+}
+
+@media (min-width: 768px) { 
+    .contenido {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) { 
+    .navegacion {
+        flex-direction: row;
+    }
+}
+
+.navegacion > a,
+.year {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.year {
+    color: var(--white);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+    

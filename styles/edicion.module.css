@@ -1,0 +1,30 @@
+.banner {
+    background-image: linear-gradient(to right, rgb(0 0 0 / .2), rgb(0 0 0 / .4)), 
+    url(../public/banner-estudio.jpg);
+    height: 35rem;
+    padding: 5rem;
+    margin: 5rem;
+    background-position: center;
+    background-size: cover;
+}
+.contenido {
+    display: grid;
+    gap: 4rem;
+}
+
+@media (min-width: 768px) { 
+    .contenido {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+}
+
+.contenido > div > h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    color: var(--blue);
+}
+
+.contenido > div > p {
+    color: gray;
+}

@@ -1,0 +1,77 @@
+.grid,
+.grid_masvendido {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+}
+
+
+
+@media (min-width: 768px) {
+    .grid,
+    .grid_masvendido {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.info {
+    margin: 3rem;
+    padding: 10rem;
+    text-align: center;
+    
+}
+
+.info section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+@media (min-width: 768px) { 
+    .info section {
+        flex-direction: row;
+    }
+}
+
+.info section span,
+.info h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--blue);
+}
+
+.info section p {
+    font-size: 2rem;
+}
+
+.lista {
+    background-image: linear-gradient(to right, var(--lightblue), var(--blue));
+    color: var(--white);
+    }
+    
+    .lista > div {
+        padding: 1rem;
+        
+    }
+    
+    .lista div ul {
+        font-weight: 700;
+    }
+    @media (min-width: 768px) { 
+        .lista div ul {
+            text-align: center;
+        }
+    }
+
+    .lista div ul div {
+        text-align: center;
+        margin-top: 3rem;
+
+    }
